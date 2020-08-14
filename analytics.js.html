@@ -7,10 +7,9 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga("require","SegmentStream"),function(){var e=window[window.GoogleAnalyticsObject||"ga"];e&&e("provide","SegmentStream",function(e){var r,a,t=e.get("sendHitTask"),n=(r=["ym_uid","_ga","ssaid","_fbp","_fbc","tmr_lvi"],a="https://track.segmentstream.com/ds/67eae52f-0b6f-4b17-8607-4839c3c0bad2",{send:function(e){var t=document.cookie.split(";").reduce(function(e,t){var n=t.split("=").map(function(e){return e.trim()}),i=n[0];return-1===r.indexOf(i)?e:(e?e+"&":"")+"cookie["+i+"]="+n[1]},"");t.length&&(e+=(e?"&":"")+t);var n,i=!1;if(e.length<=2036&&(i=o(e)),i||"function"!=typeof navigator.sendBeacon||(i=navigator.sendBeacon(a,e)),!i)try{window.XMLHttpRequest&&"withCredentials"in(n=new XMLHttpRequest)&&(n.open("POST",a,!0),n.setRequestHeader("Content-Type","text/plain"),n.send(e),i=!0)}catch(e){}return i=i||o(e)}});function o(e){try{return document.createElement("img").src=a+"?"+e,!0}catch(e){}return!1}e.set("sendHitTask",function(e){try{t(e)}catch(e){}n.send(e.get("hitPayload"))})})}();
+
   ga('create', 'UA-126203943-1', 'auto');
-
-  function ssgtm(){return function(e){var n,r,i,o;function a(t){try{return document.createElement("img").src=o+"?"+t,!0}catch(t){}return!1}void 0===e.get("SegmentStream")&&(n=e.get("sendHitTask"),i=["ym_uid","_ga","ssaid","_fbp","_fbc","tmr_lvi"],o="https://track.segmentstream.com/ds/67eae52f-0b6f-4b17-8607-4839c3c0bad2",r={send:function(t){var e=document.cookie.split(";").reduce(function(t,e){var n=e.split("=").map(function(t){return t.trim()}),r=n[0];return-1===i.indexOf(r)?t:(t?t+"&":"")+"cookie["+r+"]="+n[1]},"");e.length&&(t+=(t?"&":"")+e);var n,r=!1;if(t.length<=2036&&(r=a(t)),r||"function"!=typeof navigator.sendBeacon||(r=navigator.sendBeacon(o,t)),!r)try{window.XMLHttpRequest&&"withCredentials"in(n=new XMLHttpRequest)&&(n.open("POST",o,!0),n.setRequestHeader("Content-Type","text/plain"),n.send(t),r=!0)}catch(t){}return r=r||a(t)}},e.set("sendHitTask",function(t){n(t),r.send(t.get("hitPayload")),e.set("SegmentStream",!0)}))}}
-
   ga('send', 'pageview');
   </script>
   <!-- End Google Analytics -->
