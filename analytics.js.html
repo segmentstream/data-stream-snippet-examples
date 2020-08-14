@@ -1,0 +1,22 @@
+<html>
+<head>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-126203943-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+
+  <script>
+  function ssgtm(){return function(e){var n,r,i,o;function a(t){try{return document.createElement("img").src=o+"?"+t,!0}catch(t){}return!1}void 0===e.get("SegmentStream")&&(n=e.get("sendHitTask"),i=["ym_uid","_ga","ssaid","_fbp","_fbc","tmr_lvi"],o="https://track.segmentstream.com/ds/67eae52f-0b6f-4b17-8607-4839c3c0bad2",r={send:function(t){var e=document.cookie.split(";").reduce(function(t,e){var n=e.split("=").map(function(t){return t.trim()}),r=n[0];return-1===i.indexOf(r)?t:(t?t+"&":"")+"cookie["+r+"]="+n[1]},"");e.length&&(t+=(t?"&":"")+e);var n,r=!1;if(t.length<=2036&&(r=a(t)),r||"function"!=typeof navigator.sendBeacon||(r=navigator.sendBeacon(o,t)),!r)try{window.XMLHttpRequest&&"withCredentials"in(n=new XMLHttpRequest)&&(n.open("POST",o,!0),n.setRequestHeader("Content-Type","text/plain"),n.send(t),r=!0)}catch(t){}return r=r||a(t)}},e.set("sendHitTask",function(t){n(t),r.send(t.get("hitPayload")),e.set("SegmentStream",!0)}))}}
+  </script>
+</heead>
+<body>
+Test
+</body>
+</html>
